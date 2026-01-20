@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية - كنوز اليمن</title>
+    <style>
+        /* التنسيقات الأساسية لملء الشاشة */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+            overflow: hidden; /* يمنع التمرير لتبقى الصورة ثابتة */
+        }
+
+        /* الخلفية مع الصورة والطبقة الشفافة */
+        .hero-section {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('photo/yemen2.jpg'); /* تأكد من صحة مسار الصورة هنا */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* القائمة العلوية */
+        nav {
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* محتوى الترحيب في المنتصف */
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 4.5em;
+            margin: 0;
+            font-weight: 900;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8); 
+        }
+
+        .content p {
+            font-size: 1.6em;
+            margin-top: 15px;
+            max-width: 800px;
+            line-height: 1.6;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-section">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="place.html">الأماكن السياحية</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="content">
+            <h1>مرحباً بكم في موقع السياحة في اليمن </h1>
+            <p>
+                هنا سنعرض لكم أجمل المناطق السياحيةفي اليمن: 
+                <br>
+                سقطرى، صنعاء القديمة، محمية حوف، ودار الحجر.
+            </p>
+        </main>
+    </div>
+
+</body>
+</html>
